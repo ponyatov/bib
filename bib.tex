@@ -1,0 +1,28 @@
+\documentclass[oneside,12pt]{article}
+
+% e-book format
+\usepackage[paperwidth=210mm,paperheight=148mm,margin=10mm]{geometry}
+
+% Cyrillization
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+
+% pdflatex options
+\usepackage[unicode,colorlinks,linkcolor=blue]{hyperref}
+\usepackage[pdftex]{graphicx}
+
+% books bib management
+\usepackage{biblatex}
+\addbibresource{python.bib}
+\addbibresource{eskd.bib}
+
+% shorts
+\newcommand{\py}{Python}
+
+\begin{document}
+\section{\py}
+\cite{pyotkidach,pythink}
+\printbibliography
+\end{document}
