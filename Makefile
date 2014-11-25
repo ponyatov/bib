@@ -1,6 +1,7 @@
 BIB  = python.bib
 BIB += eskd.bib
 BIB += electronics.bib
+BIB += latex.bib
 
 bib.pdf: bib.tex $(BIB)
 	pdflatex --output-directory=tmp bib
