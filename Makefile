@@ -10,4 +10,4 @@ bib.pdf: bib.tex $(BIB)
 
 .PHONY: clean
 clean:
-	rm -f tmp/*
+	rm -f tmp/bib.*
