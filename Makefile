@@ -6,6 +6,7 @@ BIB += sat.bib
 BIB += sysdesign.bib
 BIB += math.bib
 BIB += stanki.bib
+BIB += osdev.bib
 
 bib.pdf: bib.tex $(BIB)
 	pdflatex --output-directory=tmp bib
