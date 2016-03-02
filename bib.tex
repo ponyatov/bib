@@ -1,4 +1,31 @@
 \addcontentsline{toc}{part}{Книги}
+
+\secly{Книги must have любому техническому специалисту}
+
+\subsecly{Математика, физика, химия}
+
+\begin{itemize}[nosep]
+  \item Бермант \textbf{Математический анализ}\ \cite{bermant}
+  \item Савельев \textbf{Курс общей физики}\ \cite{saveliev}
+\end{itemize} 
+
+\subsecly{Программирование}
+
+\begin{itemize}[nosep]
+  \item \textbf{Система контроля версий \prog{Git}\ и git-хостинга
+  GitHub}\\хранение наработок с полной историей редактирования, правок, релизов
+  для разных заказчиков или вариантов использования
+  \item \textbf{Язык Python}\ \cite{py}\\ написание простых скриптов обработки
+  данных, автоматизации, графических оболочек и т.п. утилит
+  \item \textbf{Язык \cpp, утилиты GNU toolchain} (gcc/g++, make,
+  ld)\\базовый Си, ООП очень кратко, без излишеств профессионального
+  программирования, чисто вспомогательная роль для написания вычислительных
+  блоков и критичных к скорости/памяти секций, использовать в связке с Python.
+  Знание базового Си \emph{критично при использовании микроконтроллеров}
+  \item Использование утилит \textbf{flex/bison}\\обработка текстовых форматов
+  данных, часто необходимая вещь
+\end{itemize}
+
 \begin{thebibliography}{99}
 
 \secly{Разработка языков программирования}
@@ -30,6 +57,10 @@ EN: \url{web.mit.edu/alexmv/6.037/sicp.pdf}
 П.Хендерсон\\
 М.: Мир, 1983
 
+\subsecly{Lisp/Sheme}
+
+\subsecly{Haskell}
+
 \subsecly{ML}
 
 \bibitem{fourman}
@@ -46,5 +77,124 @@ EN: \url{web.mit.edu/alexmv/6.037/sicp.pdf}
 \bibitem{harper} \url{http://www.cs.cmu.edu/~rwh/smlbook/book.pdf}\\
 \textbf{Programming in Standard ML}\\
 \copyright\ Robert Harper, Carnegie Mellon University
+
+\secly{Электроника и цифровая техника}
+
+\bibitem{bcollis} \bibfig{bib/bcollis.jpeg}\\
+\textbf{An Introduction to Practical Electronics, Microcontrollers
+and Software Design}\\
+Bill Collis\\
+2 edition, May 2014\\
+\url{http://www.techideas.co.nz/}
+
+\secly{Конструирование и технология}
+\subsecly{Приемы ручной обработки материалов}
+\subsecly{Механообработка}
+
+\bibitem{tabletop} \bibfig{bib/tabletop.jpg}\\
+\textbf{Tabletop Machining}\\
+Martin, Joe and Libuse, Craig\\
+Sherline Products, 2000
+
+\bibitem{briney}
+\textbf{Home Machinists Handbook}\\
+Briney, Doug, 2000
+
+\bibitem{vasil}
+\textbf{Маленькие станки}\\
+Евгений Васильев\\
+Псков, 2007\\
+\url{http://www.coilgun.ru/stanki/index.htm}
+
+\secly{Использование OpenSource программного обеспечения}
+
+\subsecly{\LaTeX}
+
+\bibitem{lvovsky}
+\textbf{Набор и вёрстка в системе \LaTeX}\\
+С.М.\,Львовский\\
+3-е издание, исправленное и дополненное, 2003\\
+\url{http://www.mccme.ru/free-books/llang/newllang.pdf}
+
+\bibitem{ebooktex}
+\textbf{e-Readers and \LaTeX}\\
+Alan Wetmore\\
+\url{https://www.tug.org/TUGboat/tb32-3/tb102wetmore.pdf}
+
+\bibitem{isotex}
+\textbf{How to cite a standard (ISO, etc.) in Bib\LaTeX\,?}\\
+\url{http://tex.stackexchange.com/questions/65637/}
+
+\subsecly{Математическое ПО: Maxima, Octave, GNUPLOT,..}
+
+\bibitem{maxphis}
+\textbf{Система аналитических вычислений Maxima для физиков-теоретиков}\\
+В.А. Ильина, П.К.Силаев\\
+\url{http://tex.bog.msu.ru/numtask/max07.ps} 
+
+\subsecly{САПР, электроника, проектирование печатных плат}
+
+\secly{Программирование}
+
+\subsecly{Python}
+
+\bibitem{py}
+\textbf{Язык программирования Python}\\
+Россум, Г., Дрейк, Ф.Л.Дж., Откидач, Д.С., Задка, М.,  Левис, М.,  Монтаро, С.,
+Реймонд, Э.С., Кучлинг, А.М.,  Лембург, М.-А.,  Йи, К.-П.,  Ксиллаг, Д.,
+Петрилли, Х.Г., Варсав, Б.А.,  Ахлстром, Дж.К.,  Роскинд, Дж.,  Шеменор, Н.,
+Мулендер, С.\\
+\copyright\ Stichting Mathematisch Centrum, 1990–1995
+and Corporation for National Research Initiatives, 1995–2000
+and BeOpen.com, 2000
+and Откидач, Д.С., 2001 \\
+\url{http://rus-linux.net/MyLDP/BOOKS/python.pdf}
+
+Python является простым и, в то же время, мощным интерпретируемым
+объектно-ориентированным языком программирования. Он предоставляет структуры
+данных высокого уровня, имеет изящный синтаксис и использует динамический
+контроль типов, что делает его идеальным языком для быстрого написания различных
+приложений, работающих на большинстве распространенных платформ. Книга содержит
+вводное руководство, которое может служить учебником для начинающих, и
+справочный материал с подробным описанием грамматики языка, встроенных
+возможностей и возможностей, предоставляемых модулями стандартной библиотеки.
+Описание охватывает наиболее распространенные версии Python: от 1.5.2 до 2.0.
+
+\subsecly{Разработка операционных систем и низкоуровневого ПО}
+
+\bibitem{osdev} \textbf{OSDev Wiki}\\
+\url{http://wiki.osdev.org}
+
+\secly{Базовые науки}
+
+\subsecly{Математика}
+
+\bibitem{bermant} \bibfig{bib/bermant.png}\\
+\textbf{Краткий курс математического анализа для ВТУЗов}\\
+Бермант А.Ф, Араманович И.Г.\\
+М.: Наука, 1967\\
+\url{https://drive.google.com/file/d/0B0u4WeMjO894U1Y1dEJ6cncxU28/view?usp=sharing}\\
+
+Пятое издание известного учебника, охватывает большинство вопросов программы по
+высшей математике для инженерно-технических специальностей вузов, в том числе
+дифференциальное исчисление функций одной переменной и его применение к
+исследованию функций; дифференциальное исчисление функций нескольких переменных;
+интегральное исчисление; двойные, тройные и криволинейные интегралы; теорию
+поля; дифференциальные уравнения; степенные ряды и ряды Фурье. Разобрано много
+примеров и задач из различных разделов механики и физики. \emph{Отличается
+крайней доходчивостью и отсутвием филонианов и ``легко догадаться''.}
+
+\subsecly{Физика}
+
+\bibitem{saveliev} \bibfig{bib/saveliev.jpg}\\
+Савельев И.В.
+
+\subsecly{Химия}
+
+\secly{Стандарты и ГОСТы}
+
+\bibitem{gost2701}
+2.701-2008 \textbf{Схемы. Виды и типы. Общие требования к выполнению}\\
+\url{http://rtu.samgtu.ru/sites/rtu.samgtu.ru/files/GOST_ESKD_2.701-2008.pdf}
 
 \end{thebibliography}
