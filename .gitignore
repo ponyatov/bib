@@ -1,3 +1,5 @@
+*~
+*.swp
 /pdf.aux
 /pdf.log
 /pdf.out
@@ -5,3 +7,4 @@
 /pdf.synctex.gz
 *.*log
 tmp/
+*.toc
