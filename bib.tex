@@ -7,6 +7,7 @@
 \begin{itemize}[nosep]
   \item Бермант \textbf{Математический анализ}\ \cite{bermant}
   \item Савельев \textbf{Курс общей физики}\ \cite{saveliev}
+  \item Смит \textbf{Цифровая обработка сигналов}\ \cite{smitdsp}
 \end{itemize} 
 
 \subsecly{Программирование}
@@ -17,20 +18,26 @@
   для разных заказчиков или вариантов использования
   \item \textbf{Язык Python}\ \cite{py}\\ написание простых скриптов обработки
   данных, автоматизации, графических оболочек и т.п. утилит
-  \item \textbf{Язык \cpp, утилиты GNU toolchain} (gcc/g++, make,
-  ld)\\базовый Си, ООП очень кратко, без излишеств профессионального
-  программирования, чисто вспомогательная роль для написания вычислительных
-  блоков и критичных к скорости/памяти секций, использовать в связке с Python.
-  Знание базового Си \emph{критично при использовании микроконтроллеров}
+  \item \textbf{Язык \cpp, утилиты GNU toolchain} (gcc/g++, make, ld)\\базовый
+  Си, ООП очень кратко\note{наследование, полиморфизм, операторы для
+  пользовательских типов, использование библиотеки STL}, без излишеств
+  профессионального программирования\note{мегабиблиотека Boost, написание своих
+  библиотек шаблонов и т.п.}, чисто вспомогательная роль для написания
+  вычислительных блоков и критичных к скорости/памяти секций, использовать в
+  связке с Python.\\
+  Знание базового Си \emph{критично при использовании микроконтроллеров},
+  из \cpp\ необходимо владение особенностями использования ООП и управления
+  крайне ограниченной памятью: пользовательские менеджеры памяти, статические
+  классы.
   \item Использование утилит \textbf{flex/bison}\\обработка текстовых форматов
-  данных, часто необходимая вещь
+  данных, часто необходимая вещь.
 \end{itemize}
 
 \begin{thebibliography}{99}
 
 \secly{Разработка языков программирования}
 
-\bibitem{dragon} \bibfig{bib/dragon.jpg}\ \emph{Dragon Book}\\
+\bibitem{dragon} \bibfig{../bib/dragon.jpg}\ \emph{Dragon Book}\\
 \textbf{Компиляторы. Принципы, технологии, инструменты.}\\
 Альфред Ахо, Рави Сети, Джеффри Ульман.\\
 Издательство Вильямс, 2003.\\ ISBN 5-8459-0189-8
@@ -38,20 +45,20 @@
 \bibitem{dragonen} \textbf{Compilers: Principles, Techniques, and Tools}\\
 Aho, Sethi, Ullman\\Addison-Wesley, 1986.\\ISBN 0-201-10088-6
 
-\bibitem{sicp} \bibfig{bib/sicp.jpg}\ \textbf{\emph{SICP}\\
+\bibitem{sicp} \bibfig{../bib/sicp.jpg}\ \textbf{\emph{SICP}\\
 \href{https://drive.google.com/file/d/0B0u4WeMjO894X3lnWmhjUktKRk0/view?usp=sharing}{Структура
 и интерпретация компьютерных программ}}\\
 Харольд Абельсон, Джеральд Сассман\\
 ISBN 5-98227-191-8\\
 EN: \url{web.mit.edu/alexmv/6.037/sicp.pdf}
 
-\bibitem{fild} \bibfig{bib/fild.jpg}\\
+\bibitem{fild} \bibfig{../bib/fild.jpg}\\
 \href{https://drive.google.com/file/d/0B0u4WeMjO894b2UxcmVvdi01TEU/view?usp=sharing}{\textbf{Функциональное
 программирование}}\\
 Филд А., Харрисон П.\\
 М.: Мир, 1993\\ISBN 5-03-001870-0
 
-\bibitem{henderson} \bibfig{bib/henderson.jpg}\\
+\bibitem{henderson} \bibfig{../bib/henderson.jpg}\\
 \href{https://drive.google.com/file/d/0B0u4WeMjO894VHhRb0tfTWNWV1k/view?usp=sharing}{Функциональное
 программирование: применение и реализация}\\
 П.Хендерсон\\
@@ -80,7 +87,7 @@ EN: \url{web.mit.edu/alexmv/6.037/sicp.pdf}
 
 \secly{Электроника и цифровая техника}
 
-\bibitem{bcollis} \bibfig{bib/bcollis.jpeg}\\
+\bibitem{bcollis} \bibfig{../bib/bcollis.jpeg}\\
 \textbf{An Introduction to Practical Electronics, Microcontrollers
 and Software Design}\\
 Bill Collis\\
@@ -91,7 +98,7 @@ Bill Collis\\
 \subsecly{Приемы ручной обработки материалов}
 \subsecly{Механообработка}
 
-\bibitem{tabletop} \bibfig{bib/tabletop.jpg}\\
+\bibitem{tabletop} \bibfig{../bib/tabletop.jpg}\\
 \textbf{Tabletop Machining}\\
 Martin, Joe and Libuse, Craig\\
 Sherline Products, 2000
@@ -169,7 +176,7 @@ Python является простым и, в то же время, мощным
 
 \subsecly{Математика}
 
-\bibitem{bermant} \bibfig{bib/bermant.png}\\
+\bibitem{bermant} \bibfig{../bib/bermant.png}\\
 \textbf{Краткий курс математического анализа для ВТУЗов}\\
 Бермант А.Ф, Араманович И.Г.\\
 М.: Наука, 1967\\
@@ -184,9 +191,22 @@ Python является простым и, в то же время, мощным
 примеров и задач из различных разделов механики и физики. \emph{Отличается
 крайней доходчивостью и отсутвием филонианов и ``легко догадаться''.}
 
+\bibitem{smitdsp}\ \bibfig{../bib/smitdsp.jpg}\\
+\textbf{Цифровая обработка сигналов. Практическое руководство для инженеров и
+научных работников}\\
+Стивен Смит\\
+Додэка XXI, 2008\\ISBN 978-5-94120-145-7
+
+В книге изложены основы теории цифровой обработки сигналов. Акцент сделан на
+доступности изложения материала и объяснении методов и алгоритмов так, как они
+понимаются при практическом использовании. Цель книги - практический подход к
+цифровой обработке сигналов, позволяющий преодолеть барьер сложной математики и
+абстрактной теории, характерных для традиционных учебников. Изложение материала
+сопровождается большим количеством примеров, иллюстраций и текстов программ
+
 \subsecly{Физика}
 
-\bibitem{saveliev} \bibfig{bib/saveliev.jpg}\\
+\bibitem{saveliev} \bibfig{../bib/saveliev.jpg}\\
 Савельев И.В.
 
 \subsecly{Химия}
